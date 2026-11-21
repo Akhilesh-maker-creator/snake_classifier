@@ -34,8 +34,8 @@ function App() {
 
       const endpoint =
         fileType === "image"
-          ? "http://127.0.0.1:8000/predict-image"
-          : "http://127.0.0.1:8000/predict-video";
+          ? "https://snakedetectionapi-production.up.railway.app//predict-image"
+          : "https://snakedetectionapi-production.up.railway.app//predict-video";
 
       const res = await fetch(endpoint, {
         method: "POST",
